@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://w15egu6aaqly"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_jve1v"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_jve1v")
+
+[node name="title" type="Label" parent="."]
+offset_left = 6.0
+offset_top = 56.0
+offset_right = 1146.0
+offset_bottom = 98.0
+theme_type_variation = &"HeaderLarge"
+text = "The First Game"
+horizontal_alignment = 1
+
+[node name="startButton" type="Button" parent="."]
+offset_left = 502.0
+offset_top = 254.0
+offset_right = 672.0
+offset_bottom = 356.0
+text = "New Game"
+
+[connection signal="pressed" from="startButton" to="." method="_on_start_button_pressed"]
